@@ -1,4 +1,4 @@
-import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons";
+import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
 
 const getPokemos = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {
 
@@ -11,6 +11,9 @@ const getPokemos = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {
       name: pokemon.name
     }
   });
+
+  // throw new Error('Este es un error que no deberia de suceder');
+  // throw notFound();
 
   return pokemons;
 }
