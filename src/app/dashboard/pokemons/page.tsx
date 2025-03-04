@@ -3,7 +3,7 @@ import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
 export const metadata = {
   title: '151 Pokemons',
   description: 'Listado de 151 Pokemons',
- };
+};
 
 const getPokemos = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {
 
@@ -32,7 +32,7 @@ export default async function PokemonsPage() {
   return (
     <div className="flex flex-col items-center justify-center p-3">
 
-      <span className="flex flex-col items-center text-5xl text-white my-2">Listado de Pokémons <small className="text-gray-800">estático</small></span>
+      <span className="flex flex-col items-center text-5xl text-white my-2">Listado de Pokémons <small className="text-blue-400">estático</small></span>
 
       <PokemonGrid pokemons={pokemons} />
 

@@ -1,8 +1,14 @@
+import { SimpleWidget } from '../../../components/SimpleWidget';
 
 export default function MainPage() {
   return (
-    <div className="text-4xl flex justify-center items-center h-full">
-      <h1 className="text-white flex flex-col items-center"><span className="text-black my-3">Welcome</span>Main Dashboard Page</h1>
+    <div className="text-black p-2">
+      <h1 className="mt-2 text-3xl">Dashboard</h1>
+      <span className="text-xl">Informacion general</span>
+
+      <div className="flex flex-wrap p-2 items-center justify-center">
+          <SimpleWidget/>
+      </div>
     </div>
   );
 }
