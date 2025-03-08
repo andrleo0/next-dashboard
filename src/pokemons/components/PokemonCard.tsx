@@ -21,7 +21,7 @@ export const PokemonCard = ({ pokemon }: Props) => {
     const dispatch = useAppDispatch();
 
     const onToggle = () => {
-        console.log(pokemon);
+        // console.log(pokemon);
         dispatch( toogleFavorite(pokemon) );
     }
 
